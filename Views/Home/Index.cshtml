@@ -1,0 +1,263 @@
+﻿@{
+    ViewData["Title"] = "WIN88 - Home";
+}
+<style>
+    /* Custom Navbar */
+    .custom-navbar {
+        background-color: #0d1a33;
+        padding: 1rem 0;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+        position: relative;
+        background: url('/images/slot-banner.jpg') no-repeat center center;
+        background-size: cover;
+        height: 400px;
+        overflow: hidden;
+    }
+
+        .hero-banner .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            animation: fadeIn 2s ease;
+        }
+
+    /* Game Card */
+    /* Adjust spacing between game cards */
+    .game-card {
+        background-color: #1e2a47;
+        border: none;
+        color: #ffffff;
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px; /* Add vertical space between rows */
+    }
+
+    /* Adjust row gutter */
+    /* Centering the game cards */
+    .container {
+        display: flex;
+        justify-content: center; /* Centers the game cards horizontally */
+        align-items: center; /* Centers the game cards vertically if needed */
+        flex-wrap: wrap; /* Allows the cards to wrap onto the next line */
+    }
+
+    .row {
+        display: flex;
+        justify-content: center; /* Centers the row horizontally */
+        gap: 20px; /* Keeps the gap between the game cards */
+        flex-wrap: wrap; /* Ensures the cards wrap onto the next line */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* Ensure even padding within columns */
+    .col-md-3 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+        .game-card:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+
+    .animated-img {
+        border-radius: 10px 10px 0 0;
+        transition: transform 0.5s ease;
+    }
+
+    .game-card:hover .animated-img {
+        transform: scale(1.1);
+    }
+
+    /* Overlay with Play Button */
+    .game-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+        border-radius: 10px;
+    }
+
+    .game-card:hover .game-overlay {
+        opacity: 1;
+    }
+
+    /* Play Button */
+    .play-button {
+        background-color: #ffc107;
+        color: #0d1a33;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .play-button:hover {
+            background-color: #e0a800;
+        }
+
+    /* Section Title */
+    .section-title {
+        font-size: 2.5rem;
+        color: #ffc107;
+        font-weight: bold;
+        animation: pulse 1.5s infinite;
+    }
+
+    /* Animations */
+    @@keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .hero-banner {
+        position: relative;
+        background: url('/images/hero.webp') no-repeat center center;
+        background-size: cover;
+        height: 400px;
+        overflow: hidden;
+    }
+
+
+
+    /* General */
+    body {
+        background-color: #0d1a33;
+        color: #ffffff;
+    }
+</style>
+
+<!-- Hero Banner -->
+<div class="container-fluid hero-banner text-center">
+    <div class="overlay">
+        <h1 class="section-title">WIN88 Games</h1>
+        <p>Enjoy our exclusive collection of exciting games!</p>
+    </div>
+</div>
+
+<!-- Game List -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-3 game-card">
+            <a href="/desktop/crash-game/pragmatic">
+                <img class="animated-img" src="//dsuown9evwz4y.cloudfront.net/Images/nexus-alpha/menu/desktop/home-menu-8/game-code-41.webp?v=20241103-1" alt="PP Casino" width="100%">
+                <div class="game-overlay">
+                    <button class="play-button">PLAY</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3 game-card">
+            <a href="/desktop/crash-game/aviator">
+                <img class="animated-img" src="//dsuown9evwz4y.cloudfront.net/Images/nexus-alpha/menu/desktop/home-menu-8/game-code-82.webp?v=20241103-1" alt="Aviator" width="100%">
+                <div class="game-overlay">
+                    <button class="play-button">PLAY</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3 game-card">
+            <a href="/desktop/crash-game/microgaming">
+                <img class="animated-img" src="//dsuown9evwz4y.cloudfront.net/Images/nexus-alpha/menu/desktop/home-menu-8/game-code-17.webp?v=20241103-1" alt="MicroGaming" width="100%">
+                <div class="game-overlay">
+                    <button class="play-button">PLAY</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3 game-card">
+            <a href="/desktop/crash-game/spinix">
+                <img class="animated-img" src="//dsuown9evwz4y.cloudfront.net/Images/nexus-alpha/menu/desktop/home-menu-8/game-code-91.webp?v=20241103-1" alt="Spinix" width="100%">
+                <div class="game-overlay">
+                    <button class="play-button">PLAY</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3 game-card">
+            <a href="/desktop/crash-game/advantplay-mini-game">
+                <img class="animated-img" src="//dsuown9evwz4y.cloudfront.net/Images/nexus-alpha/menu/desktop/home-menu-8/game-code-62.webp?v=20241103-1" alt="AdvantPlay Mini Game" width="100%">
+                <div class="game-overlay">
+                    <button class="play-button">PLAY</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3 game-card">
+            <a href="/desktop/crash-game/only-play">
+                <img class="animated-img" src="//dsuown9evwz4y.cloudfront.net/Images/nexus-alpha/menu/desktop/home-menu-8/game-code-97.webp?v=20241103-1" alt="Only Play" width="100%">
+                <div class="game-overlay">
+                    <button class="play-button">PLAY</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3 game-card">
+            <a href="/desktop/crash-game/joker">
+                <img class="animated-img" src="//dsuown9evwz4y.cloudfront.net/Images/nexus-alpha/menu/desktop/home-menu-8/game-code-6.webp?v=20241103-1" alt="Joker" width="100%">
+                <div class="game-overlay">
+                    <button class="play-button">PLAY</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3 game-card">
+            <a href="/desktop/crash-game/dragoonsoft">
+                <img class="animated-img" src="//dsuown9evwz4y.cloudfront.net/Images/nexus-alpha/menu/desktop/home-menu-8/game-code-81.webp?v=20241103-1" alt="Dragoonsoft" width="100%">
+                <div class="game-overlay">
+                    <button class="play-button">PLAY</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3 game-card">
+            <a href="/desktop/crash-game/funky-games">
+                <img class="animated-img" src="//dsuown9evwz4y.cloudfront.net/Images/nexus-alpha/menu/desktop/home-menu-8/game-code-35.webp?v=20241103-1" alt="Funky Games" width="100%">
+                <div class="game-overlay">
+                    <button class="play-button">PLAY</button>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

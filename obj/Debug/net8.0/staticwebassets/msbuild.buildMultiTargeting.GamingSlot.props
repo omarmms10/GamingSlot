@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GamingSlot.props" />
+</Project>
